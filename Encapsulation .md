@@ -23,7 +23,44 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.__length = length      # Private variable
+        self.__breadth = breadth    # Private variable
+    
+    # Getter methods
+    def get_length(self):
+        return self.__length
+    
+    def get_breadth(self):
+        return self.__breadth
+    
+    # Setter methods
+    def set_length(self, length):
+        self.__length = length
+    
+    def set_breadth(self, breadth):
+        self.__breadth = breadth
+    
+    # Method to calculate area
+    def calculate_area(self):
+        return self.__length * self.__breadth
 
+rect = Rectangle(5, 3)
+
+print("Length:", rect.get_length())
+print("Breadth:", rect.get_breadth())
+
+rect.set_length(10)
+rect.set_breadth(4)
+
+print("\nUpdated Values:")
+print("Length:", rect.get_length())
+print("Breadth:", rect.get_breadth())
+
+print("Area of Rectangle:", rect.calculate_area())
 ## Output
+<img width="383" height="355" alt="image" src="https://github.com/user-attachments/assets/1b5b2d88-e651-47a1-9569-b459ae2b64bf" />
 
 ## Result
+Thus,the program was implemented and executed successfully,and the required output was obtained.
